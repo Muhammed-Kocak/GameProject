@@ -18,6 +18,7 @@ namespace GameProject
 
             Customer.CustomerManager customerManager = new Customer.CustomerManager(new Customer.CustomerVerificationManager());
             customerManager.Add(customer);
+            Console.WriteLine("");
             #endregion
             #region Campaign And Campaign Manager Instance,Method Calling
             Campaign.Campaigns campaigns = new Campaign.Campaigns()
@@ -31,6 +32,7 @@ namespace GameProject
 
             Campaign.CampaignManager campaignManager = new Campaign.CampaignManager();
             campaignManager.Add(campaigns);
+            Console.WriteLine("");
             #endregion 
             #region Games, Game Manager And GameSales Instance,Method Calling
             GameSales.Games games = new GameSales.Games()
@@ -55,9 +57,11 @@ namespace GameProject
 
             GameSales.GameManager gameManager = new GameSales.GameManager();
             gameManager.Add(games);
+            Console.WriteLine("");
             gameManager.Update(games);
+            Console.WriteLine("");
             gameManager.Delete(games);
-
+            Console.WriteLine("");
             GameSales.GameSalesManager gameSalesManager = new GameSales.GameSalesManager(campaigns, games2);
             gameSalesManager.GameSale(games2, customer, campaigns);
             #endregion

@@ -13,7 +13,7 @@ namespace GameProject.GameSales
         }
         public void GameSale(Games game, Customer.Customer customer, Campaign.Campaigns campaigns)
         {
-            Console.WriteLine($"{game.GameName} İsimli oyunu {customer.Name} {campaigns.CampaignName} Adlı Kampanyayı Kullanarak {_indirimFiyati} İndirim İle Satın Aldı! (İndirimsiz Hali{game.GamePrice})");
+            Console.WriteLine($"{game.GameName} İsimli oyunu {customer.Name}' {campaigns.CampaignName} Adlı Kampanyayı Kullanarak {_indirimFiyati} İndirim İle Satın Aldı! (İndirimsiz Hali:{game.GamePrice})  Haydi Hemen Oynamaya Başla!");
         }
     }
 }
